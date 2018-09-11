@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "vendor/fontawesome/css/fontawesome.css";
+@import "vendor/bootstrap-social/bootstrap-social.css";
+
+body {
+    background-color: beige;
+}
