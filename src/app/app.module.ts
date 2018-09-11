@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { AwardsComponent } from './awards/awards.component';
+import { PublicationsComponent } from './publications/publications.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AwardsComponent } from './awards/awards.component';
     SidebarComponent,
     AboutComponent,
     ExperienceComponent,
-    AwardsComponent
+    AwardsComponent,
+    PublicationsComponent
   ],
   imports: [
     BrowserModule,
