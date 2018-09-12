@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { AwardsComponent } from './awards/awards.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PublicationsComponent } from './publications/publications.component';
     AboutComponent,
     ExperienceComponent,
     AwardsComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
