@@ -63,3 +63,16 @@ body {
 .container .box .details:nth-child(2) .details {
     background:#607d8b;
 }
+
+.small-contact{
+    display: none;
+}
+
+@media(max-width: 580px){
+    .contact-box{
+        display: none;
+    }
+    .small-contact{
+        display: inline;
+    }
+}
