@@ -5,7 +5,7 @@
       <img class="img-fluid img-profile mx-auto mb-4" src="https://avatars0.githubusercontent.com/u/16972250?s=460&v=4" alt="">
     </span>
   </a>
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler collapsed" type="button" (click)="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   
@@ -32,26 +32,26 @@
     </div>
   </div>
   <hr>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" routerLink="/about" [class.active]="selectedPage==='/about'">
+        <a class="nav-link js-scroll-trigger" routerLink="/about" (click)="closeNavbar()" [class.active]="selectedPage==='/about'">
           About
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" routerLink="/experience" [class.active]="selectedPage==='/experience'">
+        <a class="nav-link js-scroll-trigger" routerLink="/experience" (click)="closeNavbar()" [class.active]="selectedPage==='/experience'">
           Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" routerLink="/awards" [class.active]="selectedPage==='/awards'">Awards and Achievements</a>
+        <a class="nav-link js-scroll-trigger" routerLink="/awards" (click)="closeNavbar()" [class.active]="selectedPage==='/awards'">Awards and Achievements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" routerLink="/publications" [class.active]="selectedPage==='/publications'">Publications</a>
+        <a class="nav-link js-scroll-trigger" routerLink="/publications" (click)="closeNavbar()" [class.active]="selectedPage==='/publications'">Publications</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" routerLink="/projects" [class.active]="selectedPage==='/projects'">Projects and Code</a>
+        <a class="nav-link js-scroll-trigger" routerLink="/projects" (click)="closeNavbar()" [class.active]="selectedPage==='/projects'">Projects and Code</a>
       </li>
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="http://smb564.blogspot.com/">Blog</a>

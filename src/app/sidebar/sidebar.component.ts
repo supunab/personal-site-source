@@ -9,6 +9,7 @@ import {Router} from '@angular/router';
 export class SidebarComponent implements OnInit {
   
   selectedPage: string;
+  navbarOpen = false;
 
   constructor(private router: Router) { 
     router.events.subscribe((val) => {
@@ -17,6 +18,14 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  closeNavbar() {
+    this.navbarOpen = false;
+  }
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
   }
 
 }
