@@ -1,3 +1,5 @@
+nvm use v16
+
 ng build --prod
 
 git clone git@github.com:supunab/supunab.github.io.git

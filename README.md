@@ -2,6 +2,12 @@
 
 This project contains the source code for my [Personal Web Page](http://supun.online). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+## Node Version
+If you encounter an error when you run `ng serve`, it is likely that you are using a newer version of Node. This is tested to work with Node version 16.
+You can use nvm to use the correct version of Node.
+
+```nvm use v16```
+
 ## How to Run
 First of all you have to install the required packages using the following command in the project directory.
 
